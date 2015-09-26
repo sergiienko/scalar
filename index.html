@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-	<title>Start</title>
+	<title>Scalar</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,6 +11,7 @@
 	<link rel="icon" href="favicon.png"/>
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css" />
 
 	<!--[if lt IE 9]>
@@ -20,13 +21,133 @@
 </head>
 <body>
 	<header class="ba-header">
+		<div class="ba-container">
+			<a class="ba-logo ba-float-left" href="#">Scalar</a>
 
+			<!-- ba-menu -->
+
+			<nav class="ba-float-right">
+				<ul class="ba-menu">
+					<li class="ba-menu__item ba-menu__item--is-current">
+						<a href="#">Home</a>
+					</li>
+					<li class="ba-menu__item ba-menu__item--has-submenu">
+						<a href="#">Page layouts</a>
+
+						<ul class="ba-menu__submenu ba-menu__submenu--lvl-0">
+							<li class="ba-menu__submenu-item">
+								<a href="#">Left sidebar</a>
+							</li>
+							<li class="ba-menu__submenu-item">
+								<a href="#">Right sidebar</a>
+							</li>
+							<li class="ba-menu__submenu-item">
+								<a href="#">No sidebar</a>
+							</li>
+							<li class="ba-menu__submenu-item">
+								<a href="#">Contact</a>
+							</li>
+							<li class="ba-menu__submenu-item ba-menu__submenu-item--has-submenu">
+								<a href="#">Submenu</a>
+
+								<ul class="ba-menu__submenu ba-menu__submenu--lvl-1">
+									<li class="ba-menu__submenu-item"><a href="#">Option one</a></li>
+									<li class="ba-menu__submenu-item"><a href="#">Option two</a></li>
+									<li class="ba-menu__submenu-item"><a href="#">Option three</a></li>
+									<li class="ba-menu__submenu-item"><a href="#">Option four</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="ba-menu__item">
+						<a href="#">Elements</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- /ba-menu -->
+
+		</div>
 	</header>
-	<main role="main">
+	<main class="ba-wrapper" role="main">
+		<section class="ba-banner">
+			<div class="ba-container">
+				<h2 class="ba-banner__title">Donec amet sed eget felis facilisis</h2>
+				<p class="ba-banner__text">Morbi in sem quis dui plac viva erat ornare consequat</p>
+				<a class="ba-btn ba-btn--more" href="#">Read more</a>
+			</div>
+		</section>
+
+		<section class="ba-about">
+			<div class="ba-container">
+				<div class="ba-grid">
+					<div class="ba-width-1-2 ba-about__general">
+						<h2 class="ba-about__title--light">Vultricies nulla</h2>
+						<p class="ba-about__text--light">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis et auctor ultrices ut, elementum vulputate Pellentesque fermentum dolor. Aliquam quam lectus, facilisis aucto vulputate consequat pellentesque mauris ut lectus. Nunc tellus ante lorem ipsum dolor. Phasellus lacinia, magna a ullamcorper.</p>
+						<a class="ba-btn" href="#">Acticeno</a>
+					</div>
+
+					<div class="ba-width-1-2">
+						<div class="ba-grid">
+							<div class="ba-width-1-1 ba-about__additional">
+								<h3 class="ba-about__title--dark">Vestibulum auct</h3>
+								<p class="ba-about__text--dark">Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet lorem ipsum.</p>
+							</div>
+							<div class="ba-width-1-1 ba-about__additional">
+								<h3 class="ba-about__title--dark">Iultricies nulla</h3>
+								<p class="ba-about__text--dark">Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc lorem ipsum dolor sit amet vivamus laoreet feugiat.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ba-article">
+			<div class="ba-container">
+						<div class="ba-article__img-wrapper ba-float-left">
+							<img class="ba-article__picture" src="img/mountains.jpg">
+						</div>
+						<h2 class="ba-article__title">Fusce lobortis lorem at ipsum semper magna</h2>
+						<span class="ba-article__subtitle">Praesent placerat risus qui</span>
+						<p class="ba-article__text">Citae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante lorem ipsum dolor sit amet consequat. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit orci lorem ipsum dolor sit amet veroeros tempus. Nunc tellus ante lorem ipsum dolor sit amet consequat.</p>
+						<a href="#" class="ba-btn--dark">Magna etiam</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="ba-scheme">
+			<div class="ba-container">
+				<h2 class="ba-scheme__title">Aliquam porta</h2>
+				<p class="ba-scheme__text">Pellentesque fermentum dolor aliquam quam lectus facilisis dolore</p>
+				<ul class="ba-tree">
+					<li class="ba-tree__item">
+						<span class="ba-tree__icon fa fa-camera-retro"></span>
+						<h3 class="ba-tree__title">Cras iaculis</h3>
+						<p class="ba-tree__text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit orci. Aenean dignissim.</p>
+					</li>
+					<li class="ba-tree__item">
+						<span class="ba-tree__icon fa fa-coffee"></span>
+						<h3 class="ba-tree__title">Fusce pellent</h3>
+						<p class="ba-tree__text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit orci. Aenean dignissim.</p>
+					</li>
+					<li class="ba-tree__item">
+						<span class="ba-tree__icon fa fa-camera-retro"></span>
+						<h3 class="ba-tree__title">Cras iaculis</h3>
+						<p class="ba-tree__text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit orci. Aenean dignissim.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
 
 	</main>
-	<footer class="ba-footer">
 
+	<footer class="ba-footer">
+		<ul class="ba-social">
+			<li class="ba-social__item"><a class="ba-social__link fa fa-facebook" href="#"></a></li>
+			<li class="ba-social__item"><a class="ba-social__link fa fa-twitter" href="#"></a></li>
+			<li class="ba-social__item"><a class="ba-social__link fa fa-envelope" href="#"></a></li>
+		</ul>
 	</footer>
 </body>
 </html>
