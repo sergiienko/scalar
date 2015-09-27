@@ -112,6 +112,7 @@ button{
 	font-weight: bold;
 	color: #FFF;
 	text-decoration: none;
+	line-height: 65px;
 }
 
 .ds-logo:before {
