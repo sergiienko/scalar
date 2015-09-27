@@ -279,21 +279,21 @@ button{
 	padding-bottom: 35px;
 }
 
-.ds-about__title--light {
+.ds-about__title_light {
 	color: #FFF;
 	font-size: 30px;
 }
 
-.ds-about__text--light {
+.ds-about__text_light {
 	color: #FBD9D7;
 }
 
-.ds-about__title--dark {
+.ds-about__title_dark {
 	color: #F06862;
 	font-size: 22px;
 }
 
-.ds-about__text--dark {
+.ds-about__text_dark {
 	color: #868686;
 }
 
