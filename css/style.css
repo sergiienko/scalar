@@ -105,7 +105,7 @@ button{
 /* Wrapper */
 
 .ba-wrapper {
-	padding-top: 78px;
+	padding-top: 66px;
 }
 
 /* Header */
@@ -114,7 +114,9 @@ button{
 	position: fixed;
 	top: 0; left: 0; right: 0;
 	background: #7F7E93;
-	line-height: 78px;
+	line-height: 66px;
+	height: 66px;
+	min-height: 66px;
 	z-index: 999;
 }
 
@@ -128,7 +130,6 @@ button{
 	font-weight: bold;
 	color: #FFF;
 	text-decoration: none;
-	line-height: 65px;
 }
 
 .ba-logo:before {
@@ -148,7 +149,7 @@ button{
 
 .ba-menu__item {
 	display: inline-block;
-	line-height: 43px;
+	line-height: 66px;
 	margin-right: 20px;
 	font-size: 15px;
 }
@@ -162,47 +163,44 @@ button{
 	margin: 0 10px;
 	text-transform: uppercase;
 	font-weight: 700;
+	line-height: 36px;
 }
 
 .ba-menu__item > a:hover {
 	background-color: #767588;
 }
 
-.ba-menu__item_is-current {
+.ba-menu__item_is-current > a {
 	background-color: rgba(0, 0, 0, .25);
 }
 
 .ba-menu__item_has-submenu {  }
 
-.ba-menu__item_has-submenu:hover {
+.ba-menu__item_has-submenu > a:hover {
 	background-color: #767588;
 }
 
 .ba-menu__item_has-submenu:hover > .ba-menu__submenu {
-	visibility: visible;
+	display: block;
 }
 
 /* Sub Menu */
 
 .ba-menu__submenu {
-	visibility: hidden;
+	display: none;
 	position: absolute;
-	background: #7F7E93;
-
-	-webkit-transition-property: visibility;
-    /*-webkit-transition-duration: .5s;*/
-	-webkit-transition-delay: .2s;
+	background: transparent;
 }
 
 .ba-menu__submenu_lvl_0 {
-	top: calc(100% + 25px);
-	padding: 10px 0;
+	top: 100%;
+	padding: 25px 0 0;
 }
 
 .ba-menu__submenu_lvl_0:before {
 	content: '';
 	position: absolute;
-	top: -15px;
+	top: 10px;
 	left: 0; right: 0;
 	margin: 0 auto;
 	border-width: 0 20px 15px;
@@ -213,13 +211,14 @@ button{
 }
 
 .ba-menu__submenu_lvl_1 {
-	top: -5px;
+	top: 0;
 	left: 100%;
 	white-space: nowrap;
 }
 
-.ba-menu__submenu-item {
+.ba-menu__submenu > li {
 	position: relative;
+	background: #7F7E93;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -247,7 +246,7 @@ button{
 }
 
 .ba-menu__submenu-item_has-submenu:hover > .ba-menu__submenu {
-	visibility: visible;
+	display: block;
 }
 
 /* Banner */
